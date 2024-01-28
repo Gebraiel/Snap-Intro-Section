@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-</head>
-<body>
-
-  <!-- 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-   -->
-   <div class="overlay"></div>
-  <header class="row">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script
+      src="https://kit.fontawesome.com/1a11e246e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header class="row">
       <div class="logo">
-        <img src="images/logo.svg" alt="logo">
+        <img src="images/logo.svg" alt="logo" />
       </div>
       <nav class="row">
         <i class="fa-solid fa-xmark close"></i>
         <ul class="menu row">
           <li class="has-submenu">
-            <a href="">Features</a> 
+            <a href="">Features</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown-list col">
+              <li><img src="images/icon-todo.svg" alt="todo" />Todo List</li>
               <li>
-                <img src="images/icon-todo.svg" alt="todo">Todo List
+                <img src="images/icon-calendar.svg" alt="calendar" />Calendar
               </li>
               <li>
-                <img src="images/icon-calendar.svg" alt="calendar">Calendar
+                <img src="images/icon-reminders.svg" alt="reminders" />Reminder
               </li>
               <li>
-                <img src="images/icon-reminders.svg" alt="reminders">Reminder
-              </li>
-              <li>
-                <img src="images/icon-planning.svg" alt="planning">Planning
+                <img src="images/icon-planning.svg" alt="planning" />Planning
               </li>
             </ul>
           </li>
           <li class="has-submenu">
-            <a href="">Company</a> 
+            <a href="">Company</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown-list col">
-              <li>
-                History
-              </li>
-              <li>
-                Our Team
-              </li>
-              <li>
-                Blog
-              </li>
-
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
             </ul>
           </li>
           <li><a href="">Careers</a></li>
@@ -73,46 +66,52 @@
         </div>
       </nav>
       <i class="fa-solid fa-bars menu-bars"></i>
-  </header>
-  <main>
-    <div class="content col">
-      <h1>  Make<br> remote work
-      </h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.</p>
-      <button>Learn more</button>
-      <ul class="row">
-        <li><img src="images/client-databiz.svg" alt="Databiz"></li>
-        <li><img src="images/client-audiophile.svg" alt="audiophile"></li>
-        <li><img src="images/client-meet.svg" alt="Meet"></li>
-        <li><img src="images/client-maker.svg" alt="maker"></li>
-      </ul>
-    </div>
-    <div class="image">
-      <img class="desktop"src="images/image-hero-desktop.png" alt="image-hero">
-      <img class="mobile"src="images/image-hero-mobile.png" alt="">
-    </div>
-  
-  </main>
-  <script>
-    let menuBars = document.querySelector('.menu-bars');
-    let nav = document.querySelector('nav');
-    let close = document.querySelector('.close');
-    let overlay = document.querySelector('.overlay');
-    menuBars.addEventListener('click',function(){
-      console.log('menu bar clicked');
-      nav.style.right='0';
-      close.style.display='block';
-      overlay.style.zIndex='0';
-      overlay.style.opacity = '0.5';
-    });
-    close.addEventListener('click',function(){
-      nav.style.right='-100%';
-      close.style.display='none';
-      overlay.style.zIndex = '-1';
-      overlay.style.opacity = '0';
-    })
-  </script>
-
-</body>
+    </header>
+    <main>
+      <div class="content col">
+        <h1>
+          Make<br />
+          remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <ul class="row">
+          <li><img src="images/client-databiz.svg" alt="Databiz" /></li>
+          <li><img src="images/client-audiophile.svg" alt="audiophile" /></li>
+          <li><img src="images/client-meet.svg" alt="Meet" /></li>
+          <li><img src="images/client-maker.svg" alt="maker" /></li>
+        </ul>
+      </div>
+      <div class="image">
+        <img
+          class="desktop"
+          src="images/image-hero-desktop.png"
+          alt="image-hero"
+        />
+        <img class="mobile" src="images/image-hero-mobile.png" alt="" />
+      </div>
+    </main>
+    <script>
+      let menuBars = document.querySelector(".menu-bars");
+      let nav = document.querySelector("nav");
+      let close = document.querySelector(".close");
+      let overlay = document.querySelector(".overlay");
+      menuBars.addEventListener("click", function () {
+        console.log("menu bar clicked");
+        nav.style.right = "0";
+        close.style.display = "block";
+        overlay.style.zIndex = "0";
+        overlay.style.opacity = "0.5";
+      });
+      close.addEventListener("click", function () {
+        nav.style.right = "-100%";
+        close.style.display = "none";
+        overlay.style.zIndex = "-1";
+        overlay.style.opacity = "0";
+      });
+    </script>
+  </body>
 </html>
